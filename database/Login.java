@@ -34,9 +34,9 @@ public class Login extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					int is=Sql_connetcton.login_s("root","tzchen_20010102");
+					int is=Sql_connetcton.login_s("root","********");
 					if(is==0)
-					System.out.println("Á¬½Ó³É¹¦");
+					System.out.println("è¿æ¥æˆåŠŸ");
 					Login frame = new Login();
 					frame.setVisible(true);
 				} catch (Exception e) {
@@ -52,70 +52,70 @@ public class Login extends JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100,100,500, 400);
 		contentPane = new JPanel();
-		//ÈÃcontentPaneÄÚ²¿±ß¿òÎª¿Õ£¬²¢ÇÒÓĞ5¸öÏñËØµÄºñ¶È
+		//è®©contentPaneå†…éƒ¨è¾¹æ¡†ä¸ºç©ºï¼Œå¹¶ä¸”æœ‰5ä¸ªåƒç´ çš„åšåº¦
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JLabel label0 = new JLabel("XDU¹«½»¹ÜÀíÏµÍ³");
-		label0.setFont(new Font("¿¬Ìå", Font.PLAIN, 30));
+		JLabel label0 = new JLabel("XDUå…¬äº¤ç®¡ç†ç³»ç»Ÿ");
+		label0.setFont(new Font("æ¥·ä½“", Font.PLAIN, 30));
 		label0.setBounds(132, 20, 285, 61);
 		contentPane.add(label0);
 		
-		JLabel label1 = new JLabel("ÓÃ»§Ãû£º");
-		label1.setFont(new Font("ËÎÌå", Font.PLAIN, 14));
+		JLabel label1 = new JLabel("ç”¨æˆ·åï¼š");
+		label1.setFont(new Font("å®‹ä½“", Font.PLAIN, 14));
 		label1.setBounds(80, 120, 60, 20);
 		contentPane.add(label1);
 		
-		JLabel label2 = new JLabel("ÃÜÂë:");
-		label2.setFont(new Font("ËÎÌå", Font.PLAIN, 14));
+		JLabel label2 = new JLabel("å¯†ç :");
+		label2.setFont(new Font("å®‹ä½“", Font.PLAIN, 14));
 		label2.setBounds(80, 170, 60, 20);
 		contentPane.add(label2);
 		
-		JLabel label3 = new JLabel("Ö°Î»:");
-		label3.setFont(new Font("ËÎÌå", Font.PLAIN, 14));
+		JLabel label3 = new JLabel("èŒä½:");
+		label3.setFont(new Font("å®‹ä½“", Font.PLAIN, 14));
 		label3.setBounds(80, 215, 60, 20);
 		contentPane.add(label3);
 		
-		JLabel label4 = new JLabel("<html><body>(ÓÃ»§ÃûÎª¹¤ºÅ)</body></html>");
-		label4.setFont(new Font("¿¬Ìå", Font.PLAIN, 15));
+		JLabel label4 = new JLabel("<html><body>(ç”¨æˆ·åä¸ºå·¥å·)</body></html>");
+		label4.setFont(new Font("æ¥·ä½“", Font.PLAIN, 15));
 		label4.setBounds(362, 105, 130, 48);
 		contentPane.add(label4);
 		
-		//ÓÃ»§ÃûÊäÈë¿ò
+		//ç”¨æˆ·åè¾“å…¥æ¡†
 		textField = new JTextField();
-		textField.setFont(new Font("ËÎÌå", Font.PLAIN, 15));
+		textField.setFont(new Font("å®‹ä½“", Font.PLAIN, 15));
 		textField.setBounds(145, 115, 200, 30);
 		contentPane.add(textField);
 		textField.setColumns(10);
 		
-		//ÃÜÂëÊäÈë¿ò
+		//å¯†ç è¾“å…¥æ¡†
 		passwordField = new JPasswordField();
-		passwordField.setFont(new Font("ËÎÌå", Font.PLAIN, 15));
+		passwordField.setFont(new Font("å®‹ä½“", Font.PLAIN, 15));
 		passwordField.setBounds(145, 165, 200, 30);
 		contentPane.add(passwordField);
 		
-		//Ö°Î»Ñ¡Ôñ¿ò
+		//èŒä½é€‰æ‹©æ¡†
 		positionBox = new JComboBox();
 		positionBox.setBounds(145, 210, 200, 30);
-		positionBox.addItem("¹ÜÀíÔ±");
-		positionBox.addItem("³µ¶Ó³¤");
-		positionBox.addItem("Â·¶Ó³¤");
-		positionBox.addItem("Ë¾»ú");
+		positionBox.addItem("ç®¡ç†å‘˜");
+		positionBox.addItem("è½¦é˜Ÿé•¿");
+		positionBox.addItem("è·¯é˜Ÿé•¿");
+		positionBox.addItem("å¸æœº");
 		contentPane.add(positionBox);
 		
-		final JButton button_0 = new JButton("µÇÂ¼");
-		button_0.setFont(new Font("ËÎÌå", Font.PLAIN, 14));
+		final JButton button_0 = new JButton("ç™»å½•");
+		button_0.setFont(new Font("å®‹ä½“", Font.PLAIN, 14));
 		button_0.setBounds(95, 250, 120, 50);
 		contentPane.add(button_0);
 		
-		JButton button_1 = new JButton("ÍË³ö");
-		button_1.setFont(new Font("ËÎÌå", Font.PLAIN, 14));
+		JButton button_1 = new JButton("é€€å‡º");
+		button_1.setFont(new Font("å®‹ä½“", Font.PLAIN, 14));
 		button_1.setBounds(265, 250, 120, 50);
 		contentPane.add(button_1);
 		
-		JLabel lblCopyrightc = new JLabel("Copyright(C)2021 ÌÆ×Ó³½-Êı¾İ¿âÏµÍ³[01]°à");
-		lblCopyrightc.setFont(new Font("¿¬Ìå",Font.PLAIN, 14));
+		JLabel lblCopyrightc = new JLabel("Copyright(C)2021 xxx-æ•°æ®åº“ç³»ç»Ÿ[01]ç­");
+		lblCopyrightc.setFont(new Font("æ¥·ä½“",Font.PLAIN, 14));
 		lblCopyrightc.setBounds(98, 330, 350, 15);
 		contentPane.add(lblCopyrightc);
 		
@@ -138,34 +138,34 @@ public class Login extends JFrame {
 		
 		button_0.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				//»ñÈ¡ÓÃ»§ÊäÈëµÄÕËºÅÃÜÂëºÍÖ°Î»Ñ¡Ôñ½á¹û
+				//è·å–ç”¨æˆ·è¾“å…¥çš„è´¦å·å¯†ç å’ŒèŒä½é€‰æ‹©ç»“æœ
 				Login_infos.gh = textField.getText();
 				String pswd = String.valueOf(passwordField.getPassword());
 				String position = (String) positionBox.getSelectedItem();
-				//Ö»ÓĞÈıÕßÍ¬Ê±ÕıÈ·£¬²ÅÔÊĞíµÇÂ¼
+				//åªæœ‰ä¸‰è€…åŒæ—¶æ­£ç¡®ï¼Œæ‰å…è®¸ç™»å½•
 				Vector result=Sql_connetcton.getLogin(Login_infos.gh,pswd,position);
 				if(result==null||result.size()==0){
-					JOptionPane.showMessageDialog(getParent(), "¹¤ºÅ/ÃÜÂë/Ö°Î»´íÎó£¬ÇëÖØĞÂÊäÈë£¡", "´íÎó", JOptionPane.ERROR_MESSAGE);
+					JOptionPane.showMessageDialog(getParent(), "å·¥å·/å¯†ç /èŒä½é”™è¯¯ï¼Œè¯·é‡æ–°è¾“å…¥ï¼", "é”™è¯¯", JOptionPane.ERROR_MESSAGE);
 					return;
 				}
-				//ÈôÕËºÅÃÜÂëºÍÖ°Î»¾ùÕıÈ·£¬Ôò¸ù¾İÖ°Î»½øÈë²»Í¬µÄÖ÷Ò³Ãæ
+				//è‹¥è´¦å·å¯†ç å’ŒèŒä½å‡æ­£ç¡®ï¼Œåˆ™æ ¹æ®èŒä½è¿›å…¥ä¸åŒçš„ä¸»é¡µé¢
 				else {
-					if(position == "Ë¾»ú") {
+					if(position == "å¸æœº") {
 						Login.this.dispose();
 						Main_sj main_sj=new Main_sj();
 						main_sj.setVisible(true);
 					}
-					if(position == "Â·¶Ó³¤") {
+					if(position == "è·¯é˜Ÿé•¿") {
 						Login.this.dispose();
 						Main_ldz main_ldz=new Main_ldz();
 						main_ldz.setVisible(true);
 					}
-					if(position == "³µ¶Ó³¤") {
+					if(position == "è½¦é˜Ÿé•¿") {
 						Login.this.dispose();
 						Main_cdz main_ldz=new Main_cdz();
 						main_ldz.setVisible(true);
 					}
-					if(position == "¹ÜÀíÔ±") {
+					if(position == "ç®¡ç†å‘˜") {
 						Login.this.dispose();
 						Main main=new Main();
 						main.setVisible(true);
