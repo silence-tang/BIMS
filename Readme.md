@@ -1,1 +1,1 @@
-This is a bus intelligent management system based on Java and MySQL.
+## 西电计科数据库系统大作业：公交管理系统
